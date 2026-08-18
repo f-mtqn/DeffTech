@@ -93,7 +93,7 @@ export default function Login() {
           <div className="mb-4">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-gray-200 bg-gray-50/80 text-xs font-medium text-gray-600 shadow-2xs">
               <span>♿</span>
-              <span>disability-friendly</span>
+              <span>disability-friend</span>
             </span>
           </div>
 
