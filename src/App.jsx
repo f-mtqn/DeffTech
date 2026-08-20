@@ -7,6 +7,8 @@ import RegisterChoice from './pages/RegisterChoice';
 import RegisterJobSeeker from './pages/RegisterJobSeeker';
 import RegisterCompany from './pages/RegisterCompany';
 import Dashboard from './pages/Dashboard';
+import ChatList from './pages/ChatList';
+import RoomChat from './pages/RoomChat';
 
 function App() {
   return (
@@ -23,6 +25,22 @@ function App() {
             element={
               <ProtectedRoute>
                 <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/chat"
+            element={
+              <ProtectedRoute>
+                <ChatList />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/chat/:id"
+            element={
+              <ProtectedRoute>
+                <RoomChat />
               </ProtectedRoute>
             }
           />
